@@ -1,0 +1,28 @@
+.footer-div{
+    background: #000;
+    width: 100%;
+    position: absolute;
+    padding: 2rem;
+    z-index: 10;
+}
+.footer-div h6,.footer-div p{
+    color: white;
+}
+.footer-div h6{
+    font-size: 1.2rem;
+}
+.footer-div p{
+    color: rgb(167, 158, 158);
+    margin-top: 1rem;
+}
+.socials-div{
+    margin-top: 2rem;
+}
+.socials-div img{
+    margin-top: 1rem;
+    width: 2rem;
+    margin-left: 0.7rem;
+}
+.fb-icon{
+    width: 2.3rem !important;
+}

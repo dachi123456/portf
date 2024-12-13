@@ -1,0 +1,45 @@
+.line{
+    width: 3rem;
+    height: 5px;
+    background-color: #7843e9;
+    border-radius: 0.2rem;
+}
+.about-div{
+    
+    background-color: #fafafa;
+}
+.about-div p{
+    color: #555;
+}
+#about {
+    opacity: 0;
+    transition: opacity 1.7s ease;
+    overflow-x: hidden;
+}
+
+#about.isVisible {
+    opacity: 1;
+}
+.isVisible .skills-div{
+animation: fromRight 1s linear;
+}
+.isVisible .gettoknow-div{
+    animation: fromLeft 1s linear;
+}
+@keyframes fromRight {
+    from {
+        transform: translateX(100%); 
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fromLeft {
+    from {
+        transform: translateX(-100%); 
+    }
+    to {
+        transform: translateX(0); 
+      }
+}

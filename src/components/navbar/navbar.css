@@ -1,0 +1,30 @@
+.toggle-btn:focus{
+    box-shadow: none;
+}
+.toggle-btn{
+    border: none;
+}
+.components-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.components-div p{
+    cursor: pointer;
+    transition: transform,color 0.5s;
+    color: rgb(82, 79, 79) !important;
+    font-weight: 500;
+}
+.components-div p:hover{
+    transform: translateY(-0.1rem);
+    color: rgb(120, 67, 233) !important;
+}
+@media screen and (min-width: 992px) {
+    .components-div{
+        flex-direction: row;
+        margin-right: 1.5rem;
+    }
+    .components-div p{
+        margin-top: 6px;
+    }
+}

@@ -1,0 +1,52 @@
+
+
+.row-div {
+    width: 95%;
+    margin: auto;
+}
+.row-div p{
+    color: gray;
+}
+
+.row-div img {
+    border: 2px solid rgb(120, 67, 233);
+    border-radius: 1rem;
+}
+
+.isVisible .cardlist:nth-child(2n) {
+    animation: fromRight 2s ease forwards; 
+}
+
+.isVisible .cardlist:nth-child(2n - 1) {
+    animation: fromLeft 2s ease forwards; 
+}
+.cardlist{
+    width: 90%;
+    margin: auto;
+}
+#projects {
+    opacity: 0;
+    transition: opacity 1.7s ease;
+}
+
+#projects.isVisible {
+    opacity: 1;
+}
+
+@keyframes fromRight {
+    from {
+        transform: translateX(100%); 
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fromLeft {
+    from {
+        transform: translateX(-100%); 
+    }
+    to {
+        transform: translateX(0); 
+      }
+}

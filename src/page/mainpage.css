@@ -1,0 +1,23 @@
+.media-fixed{
+    width: 3rem;
+    min-height: 10rem;
+    background: rgb(120, 67, 233);
+    position: fixed;
+    top: 10rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1;
+    padding: 1rem;
+    left: 0;
+    display: none;
+}
+.media-fixed img{
+    width: 2rem;
+    margin-top: .5rem;    
+}
+@media screen and (min-width: 992px) {
+    .media-fixed{
+        display: flex;
+    }
+}
